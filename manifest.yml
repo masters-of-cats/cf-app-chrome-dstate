@@ -1,0 +1,6 @@
+---
+applications:
+- name: cf-chrome-dstate-test
+  memory: 2G
+  instances: 10
+  random-route: true

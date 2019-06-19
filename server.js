@@ -25,15 +25,15 @@ process.on('SIGINT', async ()=> {
     var page3 = await browser.newPage();
     console.info('New Browser');
     for (var i = 0; i < 1000; i++) {
-      page.goto('https://cf-controlplaneslotmachine.cfapps.bndl.aws.bndl.sapcloud.io/');
-      page1.goto('https://cf-controlplaneslotmachine.cfapps.bndl.aws.bndl.sapcloud.io/');
-      page2.goto('https://cf-controlplaneslotmachine.cfapps.bndl.aws.bndl.sapcloud.io/');
-      page3.goto('https://cf-controlplaneslotmachine.cfapps.bndl.aws.bndl.sapcloud.io/');
+      page.goto('http://www.histography.io/');
+      page1.goto('http://www.histography.io/');
+      page2.goto('http://www.histography.io/');
+      page3.goto('http://www.histography.io/');
       await page.waitFor(200)
     }
     await page.waitFor(1000)
     await browser.close();
-  } 
+  }
 
 })();
 

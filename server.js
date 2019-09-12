@@ -25,10 +25,10 @@ process.on('SIGINT', async ()=> {
     var page3 = await browser.newPage();
     console.info('New Browser');
     for (var i = 0; i < 1000; i++) {
-      page.goto('http://www.histography.io/');
-      page1.goto('http://www.histography.io/');
-      page2.goto('http://www.histography.io/');
-      page3.goto('http://www.histography.io/');
+      page.goto('http://10.244.0.2:61001');
+      page1.goto('http://10.244.0.2:61001');
+      page2.goto('http://10.244.0.2:61001');
+      page3.goto('http://10.244.0.2:61001');
       await page.waitFor(200)
     }
     await page.waitFor(1000)
